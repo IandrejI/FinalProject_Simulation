@@ -18557,11 +18557,10 @@ hold.block();
 							<Name><![CDATA[onAtExit]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[double onlinePara = uniform(0,1);
+double p = 0.3;
 
-
-if(onlinePara <= 0.1){
-Mitarbeitende.set_capacity(12);
-agent.online = true;
+if(onlinePara <= p){
+	agent.online = true;
 };
 
 
@@ -19520,7 +19519,7 @@ if(SushiLagerung.size() > 0){
 						<Parameter>
 							<Name><![CDATA[capacity]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[13]]></Code>
+								<Code><![CDATA[10]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -19552,6 +19551,10 @@ if(SushiLagerung.size() > 0){
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[speed]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[10]]></Code>
+								<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[homeLocationType]]></Name>
@@ -34644,6 +34647,9 @@ agent.durability = normal(1, 20)*60+time();]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[capacity]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[3]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[capacityBasedOnAttractors]]></Name>
@@ -45137,14 +45143,14 @@ Default value new Agent() ]]></Description>
 		</SimulationExperiment>
 		<!--   =========  Parameter Variation Experiment   ========  -->
 		<ParamVariationExperiment ActiveObjectClassId="1641214172918">
-			<Id>1642520558874</Id>
-			<Name><![CDATA[ParametersVariation]]></Name>
+			<Id>1643136140432</Id>
+			<Name><![CDATA[ParametersVariation2]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>8192</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
-			<SeedValue>123</SeedValue>
+			<SeedValue>1</SeedValue>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
 			<VmArgs><![CDATA[]]></VmArgs>
 			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
@@ -45162,7 +45168,7 @@ Default value new Agent() ]]></Description>
 			</ModelTimeProperties>
 			<PresentationProperties>
 				<EnableZoomAndPanning>true</EnableZoomAndPanning>
-				<Title><![CDATA[SimulationsstudieSupermarkt_18012022 : ParametersVariation]]></Title>
+				<Title><![CDATA[SimulationsstudieSupermarkt_24012022 : ParametersVariation2]]></Title>
 				<EnableDeveloperPanel>true</EnableDeveloperPanel>
 				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
 			</PresentationProperties>
