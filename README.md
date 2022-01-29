@@ -1,7 +1,7 @@
 # FinalProject_Simulation
 Simulation of Retail Logistics with AnyLogic. 
 
-This project was created as part of the university course 'Simulation' (5 ECTS).
+This project was part of the university course 'Simulation' (5 ECTS).
 
 ## Authors
 Maria Gallenmuller
